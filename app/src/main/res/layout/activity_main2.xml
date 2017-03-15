@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.kaplan.flipgame.Main2Activity"
+    android:background="@drawable/backg">
+
+    <TextView
+        android:text="Level 1 : Rushing for Assignment "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textSize="@dimen/activity_vertical_margin"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/colorPrimary"
+        tools:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:text="Target Score : 100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/colorPrimary" />
+
+    <Button
+        android:text="TAP ME !"
+        android:id="@+id/increase"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary"
+        android:layout_marginBottom="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp" />
+
+    <pl.droidsonroids.gif.GifTextView
+        android:background="@drawable/working"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/increase"
+        android:layout_alignStart="@+id/increase" />
+
+    <TextView
+        android:id="@+id/time"
+        android:textSize="25sp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/score"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="Score: 0"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="33dp"
+        android:layout_below="@+id/textView5"
+        android:layout_toRightOf="@+id/textView5"
+        android:layout_toEndOf="@+id/textView5" />
+
+</RelativeLayout>
